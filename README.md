@@ -64,5 +64,13 @@ The leadership is particularly interested in understanding:
 
 # Code Files:
 
+- <a href="https://github.com/Ayushh1512/Capstone_Project-/blob/main/Capstone_Part1.ipynb">File1</a>
 
+
+- <a href="https://github.com/Ayushh1512/Capstone_Project-/blob/main/The_CapstoneProject_Part2.ipynb">File2</a>
+
+
+# Project PPT:
+
+- <a href="https://github.com/Ayushh1512/Capstone_Project-/blob/main/CAPSTONE_PPT.pdf">PPT</a>
 
