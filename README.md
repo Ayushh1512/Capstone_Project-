@@ -74,3 +74,19 @@ The leadership is particularly interested in understanding:
 
 - <a href="https://github.com/Ayushh1512/Capstone_Project-/blob/main/CAPSTONE_PPT.pdf">PPT</a>
 
+
+# Insights:
+
+
+The two-level scraping architecture was well-designed — catalogue pages for bulk listing, then individual detail pages for richer fields like genre and description. The 50ms polite delay shows good scraping etiquette. With zero duplicates found across 1,000 records, the source data was remarkably clean.
+
+A near-perfect 1–5 uniform spread (average exactly 3.00) is statistically atypical for real-world book ratings, which typically skew positive. This suggests books.toscrape.com is a synthetic/practice dataset, which limits the real-world generalizability of any model trained on it.
+
+Price tells you almost nothing about quality as the overlapping price distributions across all rating levels confirm weak price-rating correlation. Despite price_gbp being the top feature importance contributor in Random Forest, it's likely picking up noise rather than a genuine signal — a finding worth flagging to any stakeholder expecting price to predict quality.
+
+98.7% in-stock is a dead feature in_stock and num_in_stock offer virtually no discriminating power since nearly every book is available. Including them in the 7-feature model adds noise without value. Dropping them would likely not hurt — and might slightly improve — model performance.
+
+Model performance is moderate at best as A ROC-AUC of 0.668 and 63.8% CV accuracy from the best model (Random Forest) indicates the structural features alone don't capture enough signal to reliably classify high-rated books
+
+Description length is the most interesting feature
+Of all the engineered features, desc_length is the most analytically interesting — it's a proxy for how much publishers invest in marketing a book, which could genuinely correlate with quality or editorial attention. This makes NLP on the description text the single highest-potential avenue for future improvement, far ahead of any other enhancement.
